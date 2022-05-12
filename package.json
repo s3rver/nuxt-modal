@@ -1,6 +1,6 @@
 {
   "name": "modal",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Alireza Fakharzadeh <mr.s3rver@gmail.com>",
   "main": "./lib/module.js",
   "files": [
