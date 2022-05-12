@@ -5,7 +5,9 @@
   "main": "./lib/module.js",
   "files": [
     "lib",
-    "template"
+    "template",
+    "assets",
+    "dist"
   ],
   "scripts": {
     "watch-tw": "npx tailwindcss -i ./assets/css/app.css -o ./dist/assets/css/app.css --watch"
