@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import mixin from "@/modules/modal/mixin";
+import mixin from "modal/mixin";
 
 export default {
     mixins: [mixin],
