@@ -1,0 +1,13 @@
+{
+  "name": "modal",
+  "version": "1.0.0",
+  "author": "Alireza Fakharzadeh <mr.s3rver@gmail.com>",
+  "main": "./lib/module.js",
+  "files": [
+    "lib",
+    "template"
+  ],
+  "dependencies": {
+    "disable-scroll": "^0.6.0"
+  }
+}
