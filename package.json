@@ -7,6 +7,7 @@
     "lib",
     "template",
     "assets",
+    "mixin",
     "dist"
   ],
   "scripts": {
