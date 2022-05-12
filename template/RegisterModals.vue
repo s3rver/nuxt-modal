@@ -2,7 +2,7 @@
     <div>
         <template v-for="name in modals">
             <component :is="getLayout($modal.get(name))" v-if="$modal.is(name)" :name="name">
-                <component :is="`${prefix}-${name}`" :data="$modal.get(name).data" :name="name" />
+                <component :is="`${prefix}-${name}`" :data="$modal.get(name).data" :name="name"/>
             </component>
         </template>
     </div>
@@ -28,15 +28,15 @@ export default {
     computed: {},
 
     methods: {
-        resizeWindow({ target }) {
+        resizeWindow({target}) {
             this.prefixChanger(target.innerWidth);
         },
 
         getLayout(modal) {
             if (this.options.mobileSize > window.innerWidth) {
-                return modal?.mobileLayout || this.options.mobileLayout;
+                return modal?.mobileLayout;
             } else {
-                return modal?.layout || this.options.layout;
+                return modal?.layout;
             }
         },
 
