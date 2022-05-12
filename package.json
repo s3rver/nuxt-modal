@@ -7,7 +7,13 @@
     "lib",
     "template"
   ],
+  "scripts": {
+    "watch-tw": "npx tailwindcss -i ./assets/css/app.css -o ./dist/assets/css/app.css --watch"
+  },
   "dependencies": {
     "disable-scroll": "^0.6.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
   }
 }
