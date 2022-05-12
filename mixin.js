@@ -17,7 +17,7 @@ export default {
         },
 
         zIndex() {
-            return 10001 + this.$modal.get(this.name)?.index;
+            return 10001 + this.$modal.get(this.name).index;
         },
     },
 
