@@ -6,11 +6,13 @@
   "license": "MIT",
   "keywords": [
     "modal nuxt",
-    "modal nuxt2",
+    "modal nuxtjs",
     "nuxt modal",
-    "nuxt2 modal",
+    "nuxtjs modal",
     "dialog nuxt",
-    "nuxt dialog"
+    "dialog nuxtjs",
+    "nuxt dialog",
+    "nuxtjs dialog"
   ],
   "files": [
     "lib",
