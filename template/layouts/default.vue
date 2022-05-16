@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import mixin from 'modal/mixin'
+import mixin from '@s3rver/nuxt-modal/mixin'
 
 export default {
     mixins: [mixin]
