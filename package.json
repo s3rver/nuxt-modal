@@ -1,8 +1,17 @@
 {
   "name": "modal",
   "version": "1.0.3",
-  "author": "Alireza Fakharzadeh <mr.s3rver@gmail.com>",
   "main": "./lib/module.js",
+  "author": "Alireza Fakharzadeh <mr.s3rver@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "modal nuxt",
+    "modal nuxt2",
+    "nuxt modal",
+    "nuxt2 modal",
+    "dialog nuxt",
+    "nuxt dialog"
+  ],
   "files": [
     "lib",
     "template",
@@ -13,6 +22,14 @@
   "scripts": {
     "tw-watch": "npx tailwindcss -i ./assets/css/app.css -o ./dist/assets/css/app.css --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S3RVER/modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/S3RVER/modal/issues"
+  },
+  "homepage": "https://github.com/S3RVER/modal#readme",
   "dependencies": {
     "disable-scroll": "^0.6.0"
   },
