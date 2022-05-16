@@ -52,7 +52,7 @@ export default {
             let modals = []
 
             try {
-                let context = require.context('./../../../modals', true, /\.vue/)
+                let context = require.context('./../../../../modals', true, /\.vue/)
 
                 context.keys().map(file => {
                     let name = file.replace('./', '').replace('/', '-').replace('.vue', '')
