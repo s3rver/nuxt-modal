@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import _default from 'modal/template/layouts/default'
-import _defaultMobile from 'modal/template/layouts/defaultMobile'
+import _default from '@s3rver/nuxt-modal/template/layouts/default'
+import _defaultMobile from '@s3rver/nuxt-modal/template/layouts/defaultMobile'
 
 export default {
     components: {
