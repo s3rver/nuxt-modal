@@ -1,10 +1,8 @@
-# modal
-
 ## Very simple modal for nuxt framework
 
 ```bash
 # install module
-$  npm install git://github.com/S3RVER/modal.git#v1
+$ npm i @s3rver/modal
 ```
 
 ## Steps of use
@@ -15,7 +13,7 @@ $  npm install git://github.com/S3RVER/modal.git#v1
 // nuxt.config.js
 export default {
   //...
-  modules: ['modal']
+  modules: ['@s3rver/modal']
   //...
 }
 ```
