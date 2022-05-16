@@ -2,7 +2,7 @@
 
 ```bash
 # install module
-$ npm i @s3rver/modal
+$ npm i @s3rver/nuxt-modal
 ```
 
 ## Steps of use
@@ -13,7 +13,7 @@ $ npm i @s3rver/modal
 // nuxt.config.js
 export default {
   //...
-  modules: ['@s3rver/modal']
+  modules: ['@s3rver/nuxt-modal']
   //...
 }
 ```
@@ -49,7 +49,7 @@ export default {
     responsive: false,
   },
   
-  modules: ['modal']
+  modules: ['@s3rver/nuxt-modal']
   //...
 }
 ```
