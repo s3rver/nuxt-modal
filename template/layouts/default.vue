@@ -12,8 +12,11 @@
         <transition mode="out-in" name="modal-slide">
             <div
                 v-if="is_show"
-                :style="{'z-index': zIndex }"
-                class="flex flex-col fixed bg-white inset-0 m-auto rounded-xl max-h-[96vh] overflow-y-auto max-w-max max-h-max"
+                :style="{
+                  'z-index': zIndex,
+                  height: 'max-content',
+                }"
+                class="flex flex-col fixed bg-white inset-0 m-auto rounded-xl max-h-[96vh] overflow-y-auto w-max"
             >
                 <div
                     v-if="modal.title"
