@@ -22,7 +22,7 @@
                     v-if="modal.title"
                     class="flex justify-between gap-x-5 items-center border-b border-gray-300 p-2"
                 >
-                    <h2>{{ modal.title }}</h2>
+                    <h2 class="text-xl">{{ modal.title }}</h2>
 
                     <svg
                         v-if="!modal.disabled"
