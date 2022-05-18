@@ -8,16 +8,16 @@ export default {
     data() {
         return {
             is_show: null
-        }
+        };
     },
 
     computed: {
         modal() {
-            return this.$modal.get(this.name)
+            return this.$modal.get(this.name);
         },
 
         zIndex() {
-            return 10001 + this.$modal.get(this.name).index
+            return 10001 + this.$modal.get(this.name).index;
         }
     },
 
@@ -26,23 +26,22 @@ export default {
             handler(v) {
                 if (v.visible) {
                     setTimeout(() => {
-                        this.is_show = true
-                    })
+                        this.is_show = true;
+                    });
                 } else {
-                    this.is_show = false
+                    this.is_show = false;
                 }
             },
 
-            deep: true,
-            immediate: true
+            deep: true, immediate: true
         }
     },
 
     methods: {
         close() {
             if (!this.modal.disabled) {
-                this.$modal.close(this.name)
+                this.$modal.close(this.name);
             }
         }
     }
-}
+};

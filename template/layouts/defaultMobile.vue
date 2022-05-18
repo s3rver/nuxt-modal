@@ -29,7 +29,7 @@
 import mixin from "@s3rver/nuxt-modal/mixin";
 
 export default {
-    mixins: [mixin],
+    mixins: [mixin]
 };
 </script>
 

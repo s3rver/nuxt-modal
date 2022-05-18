@@ -1,1 +1,1 @@
-module.exports = {content: ["./template/**/*.vue"]}
+module.exports = { content: ["./template/**/*.vue"] };

@@ -1,16 +1,16 @@
 <template>
     <div>
-        <template v-for='name in modals'>
-            <component :is='getLayout($modal.get(name))' v-if='$modal.is(name)' :name='name'>
-                <component :is='`${prefix}-${name}`' :data='$modal.get(name).data' :name='name' />
+        <template v-for="name in modals">
+            <component :is="getLayout($modal.get(name))" v-if="$modal.is(name)" :name="name">
+                <component :is="`${prefix}-${name}`" :data="$modal.get(name).data" :name="name" />
             </component>
         </template>
     </div>
 </template>
 
 <script>
-import _default from '@s3rver/nuxt-modal/template/layouts/default'
-import _defaultMobile from '@s3rver/nuxt-modal/template/layouts/defaultMobile'
+import _default from "@s3rver/nuxt-modal/template/layouts/default";
+import _defaultMobile from "@s3rver/nuxt-modal/template/layouts/defaultMobile";
 
 export default {
     components: {
@@ -20,62 +20,62 @@ export default {
 
     data() {
         return {
-            prefix: '',
+            prefix: "",
             modals: {}
-        }
+        };
     },
 
     computed: {},
 
     methods: {
         resizeWindow({ target }) {
-            this.prefixChanger(target.innerWidth)
+            this.prefixChanger(target.innerWidth);
         },
 
         getLayout(modal) {
             if (this.options.mobileSize > window.innerWidth) {
-                return modal?.mobileLayout
+                return modal?.mobileLayout;
             } else {
-                return modal?.layout
+                return modal?.layout;
             }
         },
 
         prefixChanger(w) {
             if (!this.options.responsive && this.options.mobileSize > w) {
-                this.prefix = 'modals-mobile'
+                this.prefix = "modals-mobile";
             } else {
-                this.prefix = 'modals'
+                this.prefix = "modals";
             }
         },
 
         setModalsName() {
-            let modals = []
+            let modals = [];
 
             try {
-                let context = require.context('./../../../../modals', true, /\.vue/)
+                let context = require.context("./../../../../modals", true, /\.vue/);
 
                 context.keys().map(file => {
-                    let name = file.replace('./', '').replace('/', '-').replace('.vue', '')
-                    modals.push(name)
-                })
+                    let name = file.replace("./", "").replace("/", "-").replace(".vue", "");
+                    modals.push(name);
+                });
             } catch (e) {
                 //
             }
 
-            this.modals = modals
+            this.modals = modals;
         }
     },
 
     mounted() {
-        this.setModalsName()
+        this.setModalsName();
 
-        this.prefixChanger(window.innerWidth)
+        this.prefixChanger(window.innerWidth);
 
-        window.addEventListener('resize', this.resizeWindow)
+        window.addEventListener("resize", this.resizeWindow);
     },
 
     destroyed() {
-        window.removeEventListener('resize', this.resizeWindow)
+        window.removeEventListener("resize", this.resizeWindow);
     }
-}
+};
 </script>
