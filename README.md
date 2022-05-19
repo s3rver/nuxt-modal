@@ -1,5 +1,9 @@
 ## Very simple modal for nuxt framework
 
+### [Demo Page](https://s3rver.github.io/nuxt-modal)
+
+https://user-images.githubusercontent.com/51977254/169375875-33904498-5449-42b4-89c9-77c9f22909ef.mp4
+
 ```bash
 # install module
 $ npm i @s3rver/nuxt-modal
@@ -12,47 +16,53 @@ $ npm i @s3rver/nuxt-modal
 ```javascript
 // nuxt.config.js
 export default {
-  //...
-  modules: ['@s3rver/nuxt-modal']
-  //...
+    //...
+    modules: ['@s3rver/nuxt-modal']
+    //...
 }
 ```
 
 ### 2 - Register modals for layout
-```vue
-<template>
-  <div>
-    <nuxt />
 
-    <!-- added line -->
-    <register-modals />
-  </div>
+```vue
+
+<template>
+    <div>
+        <nuxt />
+
+        <!-- added line -->
+        <register-modals />
+    </div>
 </template>
 ```
 
 ### 3 - Making directory modals
+
 In the main root of the project, create a directory called `modals` and save your modals with the `vue` extension
 
-
 ## options
+
 ### nuxt.config.js
+
 #### `default` options
+
 ```javascript
 // nuxt.config.js
 export default {
-  //...
-  modal: {
-    pluginName: "modal", // name plugin 
-    layout: "default", // layout desktop
-    mobileLayout: "defaultMobile", // layout mobile
-    mobileSize: 400, // mobile or desktop window size
-    responsive: false,
-  },
-  
-  modules: ['@s3rver/nuxt-modal']
-  //...
+    //...
+    modal: {
+        pluginName: "modal", // name plugin 
+        layout: "default", // layout desktop
+        mobileLayout: "defaultMobile", // layout mobile
+        mobileSize: 400, // mobile or desktop window size
+        responsive: false,
+    },
+
+    modules: ['@s3rver/nuxt-modal']
+    //...
 }
 ```
 
 ### layout & mobileLayout
+
 #### The value is equal to the name of the registered component 
