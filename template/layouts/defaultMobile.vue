@@ -13,8 +13,8 @@
             <div
                 v-if="is_show"
                 :style="{
-                  'z-index': zIndex,
-                }"
+          'z-index': zIndex,
+        }"
                 class="bg-white fixed inset-x-0 bottom-0 mx-auto p-5 py-3 max-h-[96vh] rounded-t-3xl overflow-x-hidden"
             >
                 <div
