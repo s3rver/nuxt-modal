@@ -63,6 +63,25 @@ export default {
 }
 ```
 
+### Responsive
+
+#### Responsive value is disabled by default and you must define separate components for mobile and desktop dimensions
+
+#### `If enabled, you do not need to create two components`
+![image](https://user-images.githubusercontent.com/51977254/169388851-59ee05ac-ad3c-4ab9-b075-677df6a2fd47.png)
+
+
 ### layout & mobileLayout
 
 #### The value is equal to the name of the registered component 
+
+
+
+## Making Custom Layout
+
+#### [Sample desktop layout](https://github.com/S3RVER/nuxt-modal/blob/v1/template/layouts/default.vue)
+#### [Sample mobile layout](https://github.com/S3RVER/nuxt-modal/blob/v1/template/layouts/defaultMobile.vue)
+
+![image](https://user-images.githubusercontent.com/51977254/169386837-34ff3b41-ea76-4810-8ce7-b88b7761e28a.png)
+### And then open the modal
+![image](https://user-images.githubusercontent.com/51977254/169388119-acc526e3-251f-41ef-832e-f91219bd697e.png)
