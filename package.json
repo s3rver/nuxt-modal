@@ -1,6 +1,6 @@
 {
   "name": "@s3rver/nuxt-modal",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./lib/module.js",
   "description": "Very simple modal for nuxt framework",
   "author": "Alireza Fakharzadeh <mr.s3rver@gmail.com>",
