@@ -1,6 +1,6 @@
 {
   "name": "@s3rver/nuxt-modal",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "./lib/module.js",
   "description": "Very simple modal for nuxt framework",
   "author": "Alireza Fakharzadeh <mr.s3rver@gmail.com>",
@@ -27,12 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/S3RVER/modal.git"
+    "url": "git+https://github.com/S3RVER/nuxt-modal.git"
   },
   "bugs": {
-    "url": "https://github.com/S3RVER/modal/issues"
+    "url": "https://github.com/S3RVER/nuxt-modal/issues"
   },
-  "homepage": "https://github.com/S3RVER/modal#readme",
+  "homepage": "https://github.com/S3RVER/nuxt-modal#readme",
   "dependencies": {
     "disable-scroll": "^0.6.0"
   },
