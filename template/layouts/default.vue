@@ -4,7 +4,7 @@
             <div
                 v-if="is_show"
                 :style="{ 'z-index': zIndex }"
-                class="fixed inset-0 m-auto h-screen w-screen bg-[#00000044]"
+                class="dark-lay"
                 @click="close"
             ></div>
         </transition>
@@ -16,17 +16,17 @@
                   'z-index': zIndex,
                   height: 'max-content',
                 }"
-                class="flex flex-col fixed bg-white inset-0 m-auto rounded-xl max-h-[96vh] overflow-y-auto w-max"
+                class="box-modal"
             >
                 <div
                     v-if="modal.title"
-                    class="flex justify-between gap-x-5 items-center border-b border-gray-300 p-2"
+                    class="header"
                 >
-                    <h2 class="text-xl">{{ modal.title }}</h2>
+                    <h2 class="title">{{ modal.title }}</h2>
 
                     <svg
                         v-if="!modal.disabled"
-                        class="w-5 h-5 cursor-pointer"
+                        class="ic-close"
                         viewBox="0 0 50 45"
                         xmlns="http://www.w3.org/2000/svg"
                         @click="close"
@@ -38,7 +38,7 @@
                     </svg>
                 </div>
 
-                <div class="p-2">
+                <div class="content">
                     <slot />
                 </div>
             </div>
@@ -55,6 +55,56 @@ export default {
 </script>
 
 <style scoped>
+.dark-lay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000044;
+}
+
+.box-modal {
+    display: flex;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: max-content;
+    border-radius: 0.75rem;
+}
+
+.header {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-color: #D1D5DB;
+    column-gap: 1.25rem;
+}
+
+.header .title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.header .ic-close {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+.content {
+    padding: 0.5rem;
+}
+
 .modal-fade-enter-active,
 .modal-fade-leave-active {
     transition: opacity 0.2s;

@@ -22,9 +22,7 @@
     "mixin",
     "dist"
   ],
-  "scripts": {
-    "tw-watch": "npx tailwindcss -i ./assets/css/app.css -o ./dist/assets/css/app.css --watch"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/S3RVER/nuxt-modal.git"
@@ -37,6 +35,6 @@
     "disable-scroll": "^0.6.0"
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+
   }
 }
