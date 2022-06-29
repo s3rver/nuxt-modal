@@ -13,16 +13,13 @@
             <div
                 v-if="is_show"
                 :style="{
-                  'z-index': zIndex,
-                  height: 'max-content',
+                    'z-index': zIndex,
+                    height: 'max-content',
                 }"
-                class="box-modal"
+                class="___s3r_m_box-modal"
             >
-                <div
-                    v-if="modal.title"
-                    class="header"
-                >
-                    <h2 class="title">{{ modal.title }}</h2>
+                <div v-if="modal.title" class="___s3r_m_header">
+                    <h2 class="___s3r_m_title">{{ modal.title }}</h2>
 
                     <svg
                         v-if="!modal.disabled"
@@ -38,7 +35,7 @@
                     </svg>
                 </div>
 
-                <div class="content">
+                <div class="___s3r_m_content">
                     <slot />
                 </div>
             </div>
@@ -50,7 +47,7 @@
 import mixin from "@s3rver/nuxt-modal/mixin";
 
 export default {
-    mixins: [mixin]
+    mixins: [mixin],
 };
 </script>
 
@@ -66,7 +63,7 @@ export default {
     background: #00000044;
 }
 
-.box-modal {
+.___s3r_m_box-modal {
     display: flex;
     overflow-y: auto;
     position: fixed;
@@ -74,34 +71,35 @@ export default {
     right: 0;
     bottom: 0;
     left: 0;
+    margin: auto;
     background-color: #ffffff;
     flex-direction: column;
     width: max-content;
     border-radius: 0.75rem;
 }
 
-.header {
+.___s3r_m_header {
     display: flex;
     padding: 0.5rem;
     justify-content: space-between;
     align-items: center;
     border-bottom-width: 1px;
-    border-color: #D1D5DB;
+    border-color: #d1d5db;
     column-gap: 1.25rem;
 }
 
-.header .title {
+.___s3r_m_header .___s3r_m_title {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
 
-.header .ic-close {
+.___s3r_m_header .ic-close {
     width: 1.25rem;
     height: 1.25rem;
     cursor: pointer;
 }
 
-.content {
+.___s3r_m_content {
     padding: 0.5rem;
 }
 
